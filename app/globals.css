@@ -45,6 +45,10 @@ body {
   opacity: 100%;
   animation: fadeOut 4s ease 2s 1 forwards;
 }
+.whiteGeoBG {
+  background-color: white;
+  background-image: linear-gradient(rgba(255,255,255,0.97), rgba(255,255,255,0.98)),url(https://api.deandivizio.com/wp-content/uploads/2024/08/308781-white-geometric-wallpaper-geometry-triangle-monochrome-hd.jpg);
+}
 
 @keyframes fadeOut {
   from {opacity: 100%;}

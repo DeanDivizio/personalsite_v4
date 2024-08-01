@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center text-center sm:items-start sm:text-left justify-center bg-gradient-to-r from-darkGlass sm:from-black sm:from-20% to-darkGlass sm:to-glass ">
+    <main className="flex min-h-screen flex-col items-center text-center sm:items-start sm:text-left justify-center bg-gradient-to-r from-darkGlass lg:from-black lg:from-20% to-darkGlass lg:to-glass ">
       <div>
-        <div className="p-24">
+        <div className="p-24 sm:p-32">
           <h1 className="empTextDiv text-6xl sm:text-8xl mb-6 font-semibold">{`Hi, I'm `}<span className="empText">{`Dean`}</span></h1>
           <h4 className="text-2xl sm:text-4xl font-extralight mb-16">Designer, Developer, Media Engineer</h4>
           <div className="flex justify-center sm:justify-start flex-wrap gap-8">
