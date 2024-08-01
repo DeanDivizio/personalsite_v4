@@ -6,6 +6,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --mint: #18C76F;
+  --green: #00FF5D;
+  --mint-dark: #005528;
+  --blue-light: #90D8FF;
+  --green: #00FF5D;
+  --blue: #0089D3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +30,37 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.empTextDiv{
+  background: linear-gradient(30deg, var(--green), var(--blue-light));
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  background-clip: text;
+}
+.empText{
+  color: #00000000
+}
+.fadeOutOnLoad{
+  opacity: 100%;
+  animation: fadeOut 4s ease 2s 1 forwards;
+}
+
+@keyframes fadeOut {
+  from {opacity: 100%;}
+  to {opacity: 0%;}
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 20% 20%;
+  }
+  50% {
+    background-position: 80% 80%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 @layer utilities {
