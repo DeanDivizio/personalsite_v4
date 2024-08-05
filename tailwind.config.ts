@@ -25,6 +25,7 @@ const config: Config = {
       'black': '#000000',
       'glass': "rgba(0,0,0,0.45)",
       'darkGlass': "rgba(0,0,0,0.65)",
+      'white': '#fff',
       'offWhite': "#e6e6e6",
       'darkWhite': '#969696',
       'slate': '#252525',

@@ -1,5 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import SiteExampleSlate from "@/components/SiteExampleSlate";
+
 
 
 export default function Work() {
@@ -18,9 +27,54 @@ export default function Work() {
      {/* second section */}
      <div className="min-h-screen w-screen whiteGeoBG flex flex-row justify-center items-start" >
         <div className=" h-full backdrop-blur-sm flex flex-col">
-            <div className="p-24 sm:p-32">
+            <div className="pt-24 sm:pt-32 pb-24">
                 <h1 className="empTextDiv text-6xl sm:text-8xl mb-6 font-semibold text-center text-slate">{`Web`}</h1>
                 <h4 className="text-2xl sm:text-4xl font-light mb-16 text-center text-blue">{`Design // Develop`}</h4>
+            </div>
+            <div className="flex flex-row items-center justify-center" >
+            <Carousel opts={{align: "start", loop: true, }} orientation="vertical">
+                <CarouselContent className="h-[550px]">
+                  <CarouselItem>
+                    <SiteExampleSlate
+                      heading="OVRTONE Media Group"
+                      tech="Next.js, WordPress, AWS, Sendgrid"
+                      body="OVRTONE Media Group is a media production and design company with the goal of helping local businesses. It's ran as a side project by myself and my business partner, Alex. <br><br>
+                              Our goals in this redesign were strike a balance between unique, artistic, and media-focused; and easy to use, accessible, and minimalistic. We wanted to execute our brand image and showcase our work in a way that feels natural. <br> <br>
+                              In the end, we landed on a site that's unique enough to feel personable, while using enough common design patterns to feel immediately familiar."
+                      writeUpLink="null"
+                      siteLink="null"
+                      img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
+                      img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
+                      img3={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}} />
+                    </CarouselItem>
+                    <CarouselItem>
+                      <SiteExampleSlate
+                        heading="OVRTONE Media Group"
+                        body="OVRTONE Media Group is a media production and design company with the goal of helping local businesses. It's ran as a side project by myself and my business partner, Alex. <br><br>
+                                Our goals in this redesign were strike a balance between unique, artistic, and media-focused; and easy to use, accessible, and minimalistic. We wanted to execute our brand image and showcase our work in a way that feels natural. <br> <br>
+                                In the end, we landed on a site that's unique enough to feel personable, while using enough common design patterns to feel immediately familiar."
+                        writeUpLink="null"
+                        siteLink="null"
+                        img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
+                        img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
+                        img3={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}} />
+                    </CarouselItem>
+                    <CarouselItem>
+                      <SiteExampleSlate
+                        heading="OVRTONE Media Group"
+                        body="OVRTONE Media Group is a media production and design company with the goal of helping local businesses. It's ran as a side project by myself and my business partner, Alex. <br><br>
+                                Our goals in this redesign were strike a balance between unique, artistic, and media-focused; and easy to use, accessible, and minimalistic. We wanted to execute our brand image and showcase our work in a way that feels natural. <br> <br>
+                                In the end, we landed on a site that's unique enough to feel personable, while using enough common design patterns to feel immediately familiar."
+                        writeUpLink="null"
+                        siteLink="null"
+                        img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
+                        img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
+                        img3={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}} />
+                    </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </div>
         </div>
       </div>
