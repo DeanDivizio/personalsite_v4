@@ -22,7 +22,7 @@ interface SiteProps {
     heading: string;
     tech?: string;
     body: string;
-    writeUpLink: string;
+    writeUpLink?: string;
     siteLink: string;
     img1: SiteImage;
     img2?: SiteImage;
@@ -43,7 +43,7 @@ export default function SiteExampleSlate(props: SiteProps) {
                 {props.tech ? <h5 className="text-mint text-xl mb-6 font-extralight italic">{props.tech}</h5> : null}
                 <p className="text-slate text-xl font-light tracking-wide mb-12" dangerouslySetInnerHTML={{__html: props.body}}></p>
                 <div className="flex justify-center lg:justify-start flex-wrap gap-8">
-                    <Link href={props.writeUpLink} className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light transition hover:scale-105 ease-in-out duration-300">{"Read More"}</Link>
+                    {props.writeUpLink ? <Link href={props.writeUpLink} className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light transition hover:scale-105 ease-in-out duration-300">{"Read More"}</Link> : null}
                     <div className="rounded-lg bg-gradient-to-r from-mint to-mint-dark p-px flex items-center justify-center transition hover:scale-105 ease-in-out duration-300"><Link href={props.siteLink} className="bg-white px-12 sm:px-16 py-2 rounded-lg text-xl text-slate font-thin">{"View Site"}</Link></div>
                 </div>
             </div>

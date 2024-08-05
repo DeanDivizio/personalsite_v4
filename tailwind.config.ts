@@ -30,6 +30,7 @@ const config: Config = {
       'darkWhite': '#969696',
       'slate': '#252525',
       'slate-light': '#363636',
+      'slate-dark': '#161616',
     },
     extend: {
       backgroundImage: {

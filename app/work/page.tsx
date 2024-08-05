@@ -25,7 +25,7 @@ export default function Work() {
      </div>
      <div className=" backdrop-blur-lg sm:backdrop-blur-md absolute min-h-screen w-screen top-0 left-0 -z-40"></div>
      {/* second section */}
-     <div className="min-h-screen w-screen whiteGeoBG flex flex-row justify-center items-start" >
+     <div id="web" className="min-h-screen w-screen whiteGeoBG flex flex-row justify-center items-start" >
         <div className=" h-full backdrop-blur-sm flex flex-col">
             <div className="pt-24 sm:pt-32 pb-24">
                 <h1 className="empTextDiv text-6xl sm:text-8xl mb-6 font-semibold text-center text-slate">{`Web`}</h1>
@@ -41,40 +41,48 @@ export default function Work() {
                       body="OVRTONE Media Group is a media production and design company with the goal of helping local businesses. It's ran as a side project by myself and my business partner, Alex. <br><br>
                               Our goals in this redesign were strike a balance between unique, artistic, and media-focused; and easy to use, accessible, and minimalistic. We wanted to execute our brand image and showcase our work in a way that feels natural. <br> <br>
                               In the end, we landed on a site that's unique enough to feel personable, while using enough common design patterns to feel immediately familiar."
-                      writeUpLink="null"
-                      siteLink="null"
-                      img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
-                      img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
-                      img3={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}} />
+                      writeUpLink="/work/ovrtone"
+                      siteLink="https://www.ovrtonemedia.com"
+                      img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONE1.webp", width: 2000, height: 1000}}
+                      img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONE2.webp", width: 2000, height: 1000}}
+                      img3={{url: "https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONE3.webp", width: 2000, height: 1000}} />
                     </CarouselItem>
                     <CarouselItem>
                       <SiteExampleSlate
-                        heading="OVRTONE Media Group"
-                        body="OVRTONE Media Group is a media production and design company with the goal of helping local businesses. It's ran as a side project by myself and my business partner, Alex. <br><br>
-                                Our goals in this redesign were strike a balance between unique, artistic, and media-focused; and easy to use, accessible, and minimalistic. We wanted to execute our brand image and showcase our work in a way that feels natural. <br> <br>
-                                In the end, we landed on a site that's unique enough to feel personable, while using enough common design patterns to feel immediately familiar."
-                        writeUpLink="null"
-                        siteLink="null"
-                        img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
-                        img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
-                        img3={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}} />
+                        heading="Capital Podiatry"
+                        tech="Wordpress"
+                        body="Originally designed and built by me, this is a great example of a modern, airy, and light feeling site. The client's goals were to make it simple, inviting, and direct, so that users felt compforatble while also having clear CTAs wherever possible. <br><br>
+                              While no longer maintained by me, enough of my original design is still present to warrant checking it out if you're interested."
+                        siteLink="https://capitalfeel.com"
+                        img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/08/CapitalPod1.webp", width: 2000, height: 1000}}
+                        img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/08/CapitalPod2.webp", width: 2000, height: 1000}}
+                         />
                     </CarouselItem>
                     <CarouselItem>
                       <SiteExampleSlate
-                        heading="OVRTONE Media Group"
-                        body="OVRTONE Media Group is a media production and design company with the goal of helping local businesses. It's ran as a side project by myself and my business partner, Alex. <br><br>
-                                Our goals in this redesign were strike a balance between unique, artistic, and media-focused; and easy to use, accessible, and minimalistic. We wanted to execute our brand image and showcase our work in a way that feels natural. <br> <br>
-                                In the end, we landed on a site that's unique enough to feel personable, while using enough common design patterns to feel immediately familiar."
-                        writeUpLink="null"
-                        siteLink="null"
-                        img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
-                        img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}}
-                        img3={{url: "https://api.deandivizio.com/wp-content/uploads/2024/04/ovrtoneHP.jpg", width: 1280, height: 651}} />
+                        heading="Bark Productions"
+                        tech="Next.js, WordPress"
+                        body="Bark Productions is a live events company in the the Chicagoland area. The owner approached me wanting a site that was fast and visually appealling; essentially acting as a half digital business card and half showcase of prior projects. <br><br>
+                              While the bulk of the site is built on Next.js, it uses WordPress as a CMS to allow the client to easily update content on his own - which was a core requirement of this project. <br><br>
+                              Bark Productions is a client of OVRTONE's and has aggreed to allow us to discuss his project in detail. You can read more about his site, as well as the design of his brand overall below."
+                        writeUpLink="/work/barkproductions"
+                        siteLink="https://www.barkpro.live"
+                        img1={{url: "https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro1.webp", width: 2000, height: 1000}}
+                        img2={{url: "https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro2.webp", width: 2000, height: 1000}} />
                     </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
               </Carousel>
+            </div>
+        </div>
+      </div>
+    {/* third section */}
+      <div id="media" className="min-h-screen w-screen flex flex-row justify-center items-start bg-gradient-to-b from-black to-slate-dark">
+        <div className="pt-24 sm:pt-32 pb-24">
+        <div className="pt-24 sm:pt-32 pb-24">
+                <h1 className="empTextDiv text-6xl sm:text-8xl mb-6 font-semibold text-center text-white">{`Video`}</h1>
+                
             </div>
         </div>
       </div>
