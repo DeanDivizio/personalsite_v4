@@ -1,13 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel"
-  
+
 
 export default function Work() {
   return (
@@ -23,21 +16,12 @@ export default function Work() {
      </div>
      <div className=" backdrop-blur-lg sm:backdrop-blur-md absolute min-h-screen w-screen top-0 left-0 -z-40"></div>
      {/* second section */}
-     <div className="min-h-screen w-screen whiteGeoBG flex flex-row justify-center" >
-        <div className="w-full h-full backdrop-blur-sm">
+     <div className="min-h-screen w-screen whiteGeoBG flex flex-row justify-center items-start" >
+        <div className=" h-full backdrop-blur-sm flex flex-col">
             <div className="p-24 sm:p-32">
                 <h1 className="empTextDiv text-6xl sm:text-8xl mb-6 font-semibold text-center text-slate">{`Web`}</h1>
                 <h4 className="text-2xl sm:text-4xl font-light mb-16 text-center text-blue">{`Design // Develop`}</h4>
             </div>
-            <Carousel>
-                <CarouselContent>
-                    <CarouselItem>...</CarouselItem>
-                    <CarouselItem>...</CarouselItem>
-                    <CarouselItem>...</CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-            </Carousel>
         </div>
       </div>
     </main>
