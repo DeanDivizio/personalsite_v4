@@ -158,3 +158,12 @@ body {
 button {
   color: var(--mint)
 }
+
+#tsparticles {
+  position: relative;
+  z-index: -5;
+  height: 100%;
+}
+#tsparticles::before {
+  backdrop-filter: blur(25px);
+}
