@@ -49,6 +49,10 @@ body {
   background-color: white;
   background-image: linear-gradient(rgba(255,255,255,0.97), rgba(255,255,255,0.98)),url(https://api.deandivizio.com/wp-content/uploads/2024/08/308781-white-geometric-wallpaper-geometry-triangle-monochrome-hd.jpg);
 }
+.darkGeoBG {
+  background-color: #161616;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.97), rgba(8, 8, 8, 0.98)),url(https://api.deandivizio.com/wp-content/uploads/2024/08/308781-white-geometric-wallpaper-geometry-triangle-monochrome-hd.jpg);
+}
 
 @keyframes fadeOut {
   from {opacity: 100%;}

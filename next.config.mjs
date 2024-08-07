@@ -7,6 +7,11 @@ const nextConfig = {
               hostname: 'api.deandivizio.com',
               port: '',
             },
+            {
+              protocol: "https",
+              hostname: 'www.youtube.com',
+              port: '',
+            }
           ],
         },
 };
