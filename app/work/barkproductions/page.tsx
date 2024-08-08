@@ -5,9 +5,9 @@ import BarkProPicCollumn from "@/components/BarkProPicCollumn"
 export default function BarkProPage() {
     return (
         <main>
-            <div id="heroContent" className="flex min-h-screen flex-col items-center text-center lg:items-start lg:text-left justify-center">
-            <div id="ovrtoneHero" className="min-h-screen p-36 flex flex-col justify-center">
-                <h1 className="text-6xl mb-4">Bark Productions</h1>
+            <div id="heroContent" className="flex min-h-screen flex-col items-center text-center lg:items-start lg:text-left justify-center overflow-x-hidden">
+            <div id="barkHero" className="min-h-screen p-36 flex flex-col justify-center">
+                <h1 className="text-4xl sm:text-6xl mb-4 leading-[140%] sm:leading-normal">Bark Productions</h1>
                 <h4 className="text-2xl font-extralight tracking-wide text-offWhite">A Design and Development Breakdown</h4>
             </div> 
             </div>
@@ -17,7 +17,7 @@ export default function BarkProPage() {
             </div>
             <div id="heroBGOverlay" className=" backdrop-blur-md sm:backdrop-blur-md bg-gradient-to-r from-darkGlass lg:from-black lg:from-20% to-darkGlass lg:to-glass absolute min-h-screen w-screen top-0 left-0 -z-10"></div>
             <div>
-                <div id="ovrtoneBrand" className="min-h-screen p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
+                <div id="barkBrand" className="min-h-screen p-12 sm:p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
                     <div className="flex flex-col items-center">
                         <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-slate">{`Brand Design`}</h2>
                         <h3 className="text-center text-4xl font-extralight text-blue mb-16">The Core Concept</h3>
@@ -26,7 +26,7 @@ export default function BarkProPage() {
                         <hr className="border-mint w-[33%] mb-16"></hr>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2">
-                        <div>
+                        <div className="order-2 mt-16 sm:mt-auto sm:order-1">
                             <div id="ovrtoneLogo" className="mb-8">
                                 <h3 className="text-4xl text-slate mb-6">Starting with the Logo</h3>
                                 <p className="text-lg text-slate tracking-wider font-light mb-4">{`When designing a brand, I always start with the logo. It needs to be a sort of sample platter of all the different elements that make up the brand; namely feel, type, and color.`}</p>
@@ -43,13 +43,13 @@ export default function BarkProPage() {
                                 <p className="text-lg text-slate tracking-wider font-light">{`In addition to light and dark variants of the primary red, I wanted to make sure to equip the brand with a at least a secondary color. With lighting being a huge component of the company's services, I opted to use a shade of blue for a secondary color, and a shade of green for a tertiary color - should it ever be needed.`}</p>
                             </div>
                         </div>
-                        <Image className="max-w-[66%] inline-block ml-64 mr-64 shadow-lg" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro2-1.webp"} width={2000} height={2000} alt="OVRTONE Media Group Logo" />
+                        <Image className="max-w-[66%] inline-block ml-12 sm:ml-64 mr-12 sm:mr-64 shadow-lg order-1 sm:order-2" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro2-1.webp"} width={2000} height={2000} alt="OVRTONE Media Group Logo" />
                     </div>
                 </div>
                 <ParticleBG />
             </div>
-            <div id="ovrtoneSite" className="min-h-screen darkGeoBG">
-                <div className="w-full h-full p-48 backdrop-blur-md">
+            <div id="barkSite" className="min-h-screen darkGeoBG">
+                <div className="w-full h-full p-12 sm:p-48 backdrop-blur-md">
                     <div className="flex flex-col items-center">
                         <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-white">{`The Website`}</h2>
                         <h3 className="text-center text-4xl font-extralight text-mint mb-16">Our Goals</h3>
@@ -58,7 +58,7 @@ export default function BarkProPage() {
                         <hr className="border-mint-dark w-[33%] mb-24"></hr>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2">
-                        <div>
+                        <div className="order-2 sm:order-1">
                             <div id="ovrtoneSiteDesign" className="mb-8">
                                 <h3 className="text-4xl text-white mb-6">Design Framework</h3>
                                 <p className="text-lg text-offWhite tracking-wider font-light mb-4">{`Designing this site was interesting since the client doesn't have a lot of content for it. We decided to go with a micro-page layout, where the background, header, and footer all stay constant and navigation determines the module that displays inbetween.`}</p>

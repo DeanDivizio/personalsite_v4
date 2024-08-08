@@ -23,14 +23,14 @@ export default function About() {
             </div>
             <div id="bio" className="w-screen whiteGeoBG flex flex-row justify-center items-start" >
                 <div className="h-full backdrop-blur-sm flex flex-col">
-                    <div className="pt-36 sm:pt-40 pb-48 pl-64 pr-64 flex flex-col justify-center items-center backdrop-blur-md">
+                    <div className="pt-24 sm:pt-40 pb-36 sm:pb-48 pl-16 sm:pl-64 pr-16 sm:pr-64 flex flex-col justify-center items-center backdrop-blur-md">
                         <h2 className="empTextDiv text-6xl sm:text-8xl mb-16 font-semibold text-center text-slate">{`Hi!`}</h2>
-                        <p className="text-xl text-slate font-light tracking-wide text-center">{`My name's Dean and I'm a multimedia engineer and designer.`}</p>
+                        <p className="text-xl text-slate font-light tracking-wide text-left sm:text-center">{`My name's Dean and I'm a multimedia engineer and designer.`}</p>
                         <br className="mb-8"></br>
-                        <p className="text-xl text-slate font-light tracking-wide text-center mb-8">{`While I've held a lot of varied positions across my career (from graphic design, to SEO tem management, to programming), my goal is always to use my existing skills alongside my desire to learn to adapt to the requirements of my current role.`}</p>
-                        <hr className="mb-12 w-[66%] border-blue"></hr>
-                        <h3 className="text-2xl text-slate-light font-medium tracking-wide text-center mb-12">{`In terms of specifics, I'm proficient in:`}</h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-4 gap-16">
+                        <p className="text-xl text-slate font-light tracking-wide text-left sm:text-center mb-16">{`While I've held a lot of varied positions across my career (from graphic design, to SEO tem management, to programming), my goal is always to use my existing skills alongside my desire to learn to adapt to the requirements of my current role.`}</p>
+                        {/* <hr className="mb-12 w-[66%] border-blue"></hr> */}
+                        <h3 className="text-2xl text-slate-light font-medium sm:tracking-wide sm:text-center mb-12">{`In terms of specifics, I'm proficient in:`}</h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 sm:gap-16">
                             <div className="flex flex-col">
                                 <h4 className="text-slate text-2xl mb-2">Design</h4>
                                 <p className="text-slate text-lg font-light">Layout</p>
@@ -60,8 +60,14 @@ export default function About() {
                                 <p className="text-slate text-lg font-light">{`MacOS, Windows, Linux`}</p>
                             </div>
                         </div>
-                        <br className="mb-36"></br>
-                        <p className="text-xl text-slate font-light tracking-wide text-center italic mb-8">{`I find my work to be most fulfilling when I'm using these skills to help others and better the world around me.`}</p>
+                        <br className="mb-16 sm:mb-32"></br>
+                        <p className="text-xl text-slate font-light tracking-wide text-center italic mb-8 sm:mb-12">{`I find my work to be most fulfilling when I'm using these skills to help others and better the world around me.`}</p>
+                        <hr className="border-slate-light border w-[16%] mb-16"></hr>
+                        <p className="text-lg sm:text-xl text-slate font-light sm:tracking-wide text-center mb-6">{`I'm not very active on social media but if you'd like my links, here they are. :)`}</p>
+                        <div className="grid grid-cols-2">
+                            <Link className="text-lg text-slate underline hover:text-mint hover:scale-105 transition-all" href={"https://github.com/DeanDivizio"}>GitHub</Link>
+                            <Link className="text-lg text-slate underline hover:text-mint hover:scale-105 transition-all" href={'https://x.com/DeanDivizio'}>X / Twitter</Link>
+                        </div>
                     </div>
                     <ParticleBG />
                 </div>

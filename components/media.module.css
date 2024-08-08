@@ -125,6 +125,20 @@
 .CTASection a{
   font-size: 2rem;
 }
+.toggleButton {
+ left: 10px;
+  width: calc((2rem + 3vw)*2.6);;
+  height: calc((2rem + 3vw)*1.15);
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.25s cubic-bezier(0, 0.65, 0, 1);
+  z-index: 0;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+.toggleButton.active {
+  transform: translateX(calc((2rem + 3vw)*2.9));
+}
+
 }
 .greenText{
   font-family: "Rock Salt", cursive;

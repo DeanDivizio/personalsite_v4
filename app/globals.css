@@ -12,6 +12,8 @@
   --blue-light: #90D8FF;
   --green: #00FF5D;
   --blue: #0089D3;
+  margin:0;
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,6 +32,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    margin:0;
 }
 
 .empTextDiv{
@@ -163,7 +166,12 @@ button {
   position: relative;
   z-index: -20;
   height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
-#tsparticles::before {
-  backdrop-filter: blur(25px);
+
+#tsparticles {
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }

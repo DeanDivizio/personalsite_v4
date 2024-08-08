@@ -16,7 +16,7 @@ export default function Home() {
       </div>
      <div className="h-screen w-screen fixed -z-50">
       <Image src="https://api.deandivizio.com/wp-content/uploads/2024/02/DSC03928-Large.jpeg" fill={true} alt="" className="object-cover fadeOutOnLoad"/>
-      <video src="https://api.deandivizio.com/wp-content/uploads/2024/08/PortfilioBGVid_720_650k.mp4" autoPlay muted loop className=" min-w-full min-h-screen object-cover object center"/>
+      <video src="https://api.deandivizio.com/wp-content/uploads/2024/08/PortfilioBGVid_720_650k.mp4" autoPlay playsInline muted loop className=" min-w-full min-h-screen object-cover object center"/>
      </div>
      <div className=" backdrop-blur-lg sm:backdrop-blur-md absolute min-h-screen w-screen top-0 left-0 -z-40"></div>
     </main>
