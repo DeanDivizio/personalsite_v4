@@ -43,7 +43,7 @@ body {
 }
 .fadeOutOnLoad{
   opacity: 100%;
-  animation: fadeOut 4s ease 2s 1 forwards;
+  animation: fadeOut 3s ease 1s 1 forwards;
 }
 .whiteGeoBG {
   background-color: white;
@@ -159,9 +159,9 @@ button {
   color: var(--mint)
 }
 
-#tsparticles {
+#tsparticles canvas {
   position: relative;
-  z-index: -5;
+  z-index: -20;
   height: 100%;
 }
 #tsparticles::before {
