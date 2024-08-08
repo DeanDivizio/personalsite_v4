@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Site V4 - Comin' Back for More
 
-## Getting Started
+## Why the redesign?
 
-First, run the development server:
+I suppose this is actually V3 ish.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+My first site was incredibly boring and inititally built with CRA. Eventually I decided to rebuild it on Next.js, so it got a back-end overhaul but kept largely the same design.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Second time around, I swung too far in the other direction. It definitely wasn't boring but it was also overly complex and overall, just not great.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What are the goals for V4?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Well the main one is to strike a balance between "might as well be a PDF" and "holy animations, Batman".
 
-## Learn More
+Other than that, I want to expand a little more. Write up case studies on some of the projects, leave room for a blog, etc.
 
-To learn more about Next.js, take a look at the following resources:
+It's also my first time using TypeScript, Tailwind, and some components from Shadcn. Figured I've been wanting to start experimenting with different ways of doing things and this was a good excuse.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<hr>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## What are the goals post launch?
 
-## Deploy on Vercel
+I'm launching within the next few days and while the site is in a good state, there are definitely a few things I want to do going forwards.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Clean up my code
+    - abstract common Tailwind styling to variables
+    - condence all of my mobile checks to a single hook
+    - just generally fix spacing and indenting to make it *pretty*
+- Add more comments because Lord knows I **will** forget what I did and why
+- Add more breakpoints
+    - right now it looks good on mobile, good on desktop, and is hit or miss with everything in between
+    - mainly it's the stuff with the carousels. most of my other sections adapt well as is
+- Add a blog section
+    - Right now my WordPress install is essentially just file storage. I want to change that. A blog template with a blogs landing page and content from WordPress via WPGraphQL sounds like a great way to do that.
+- Add more work examples
+    - I'm wrapping up some projects soon so this should be easy but still - more work would be great
