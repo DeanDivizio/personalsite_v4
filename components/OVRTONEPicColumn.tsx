@@ -31,7 +31,7 @@ export default function OVRTONEPicColumn() {
     }, [width, isMobile]);
 
     return(
-        <div className="pt-8 sm:pt-24">
+        <div className="pt-8 sm:pt-24 order-1 sm:order-2">
             <Image className="max-w-[90%] sm:max-w-[66%] inline-block ml-4 mr-4 sm:ml-64 sm:mr-64 mb-24" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONE1.webp"} width={2000} height={1000} alt="OVRTONE Media Group site " />
             {!isMobile ? <Image className="max-w-[66%] inline-block ml-64 mr-64" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONE2.webp"} width={2000} height={1000} alt="OVRTONE Media Group site" /> : null}
         </div>

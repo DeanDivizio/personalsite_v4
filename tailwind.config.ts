@@ -34,6 +34,9 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
+        "work-bg": "linear-gradient(to right, #000, rgba(0, 0, 0, 0.65)), url(https://api.deandivizio.com/wp-content/uploads/2024/02/DSC06894-scaled.jpg)",
+        "ovrtone-bg": "linear-gradient(to right, #000, rgba(0, 0, 0, 0.65)), url(https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONE1.webp)",
+        "barkpro-bg": "linear-gradient(to right, #000, rgba(0, 0, 0, 0.65)), url(https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro1.webp)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

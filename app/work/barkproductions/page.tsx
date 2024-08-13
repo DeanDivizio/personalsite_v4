@@ -1,19 +1,18 @@
 import Image from "next/image"
 import ParticleBG from "@/components/ParticleBG"
 import BarkProPicCollumn from "@/components/BarkProPicCollumn"
+import Link from "next/link"
 
 export default function BarkProPage() {
     return (
         <main>
-            <div id="heroContent" className="flex min-h-screen flex-col items-center text-center lg:items-start lg:text-left justify-center overflow-x-hidden">
-            <div id="barkHero" className="min-h-screen p-36 flex flex-col justify-center">
-                <h1 className="text-4xl sm:text-6xl mb-4 leading-[140%] sm:leading-normal">Bark Productions</h1>
-                <h4 className="text-2xl font-extralight tracking-wide text-offWhite">A Design and Development Breakdown</h4>
-            </div> 
-            </div>
-
-            <div id="heroBG" className="h-screen w-screen absolute top-0 left-0 min-h-screen -z-[11] overflow-clip">
-                <Image src="https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro1.webp" width={2000} height={1000} alt="" className="object-cover" style={{minHeight: "100vh", minWidth: "100vw"}} />
+            <div id="heroContent" className="flex min-h-screen flex-col items-center text-center lg:items-start lg:text-left justify-center overflow-x-hidden bg-barkpro-bg bg-cover">
+                <div className="w-screen backdrop-blur-lg">
+                    <div id="barkHero" className="min-h-screen p-36 flex flex-col justify-center">
+                        <h1 className="text-4xl sm:text-6xl mb-4 leading-[140%] sm:leading-normal">Bark Productions</h1>
+                        <h4 className="text-2xl font-extralight tracking-wide text-offWhite">A Design and Development Breakdown</h4>
+                    </div>
+                </div>
             </div>
             <div id="heroBGOverlay" className=" backdrop-blur-md sm:backdrop-blur-md bg-gradient-to-r from-darkGlass lg:from-black lg:from-20% to-darkGlass lg:to-glass absolute min-h-screen w-screen top-0 left-0 -z-10"></div>
             <div>
@@ -80,6 +79,45 @@ export default function BarkProPage() {
                             </div>
                         </div>
                         <BarkProPicCollumn />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="barkPlan" className="min-h-[80vh] p-12 sm:p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
+                    <div className="flex flex-col items-center">
+                    <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-slate">{`Moving Forward`}</h2>
+                        <h3 className="text-center text-4xl font-extralight text-blue mb-16">Plans for the Future</h3>
+                        <p className="text-lg text-slate text-center tracking-wider mb-16 font-light">{`While the Bark Productions project is complete for now, I'm continuing to work with the client to establish plans for the future.`}</p>
+                        <p className="text-xl text-slate text-center tracking-wider mb-12 font-light italic">{`Namely, expanding the site from the micro-page structure to include more indepth pages on individual services, and equipment for rent - as mentioned above.`}</p>
+                        <hr className="border-mint w-[33%] mb-16"></hr>
+                    </div>
+                </div>
+                <ParticleBG />
+            </div>
+            <div id="barkCTA" className="darkGeoBG">
+                <div className="w-full p-12 sm:p-48 flex flex-col items-center backdrop-blur-md">
+                    <div className="flex flex-col items-center">
+                        <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-white">{`Wrapping Up`}</h2>
+                        <h3 className="text-center text-4xl font-extralight text-mint mb-24">{`Places to Go, Things to Read`}</h3>
+                        <p className="text-xl text-offWhite text-center tracking-wider mb-16 font-light italic" >{`I never like getting to the end of a webpage and feeling like I've hit a dead-end, so here're a few things you might be interested in!`}</p>
+                        <hr className="border-mint-dark w-[33%] mb-24"></hr>
+                    </div>
+                    <div className="grid grid-rows-3 md:grid-cols-3 max-h-screen md:max-h-[400px] max-w-fit gap-24">
+                        <div className="flex flex-col gap-8 items-center">
+                            <h4 className="text-offWhite text-2xl mb-2" >Other Write-ups</h4>
+                            <Link href='/work/ovrtone' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"OVRTONE Media"}</Link>
+                        </div>
+                        <div className="flex flex-col gap-8 items-center">
+                            <h4 className="text-offWhite text-2xl mb-2" >Elsewhere On-Site</h4>
+                            <Link href='/work' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"Work"}</Link>
+                            {/* <Link href='/blog' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"Blog"}</Link> */}
+                            <Link href='/about' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"About"}</Link>
+                        </div>
+                        <div className="flex flex-col gap-8 items-center">
+                            <h4 className="text-offWhite text-2xl mb-2">Social</h4>
+                            <Link href={"https://github.com/DeanDivizio"} className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"GitHub"}</Link>
+                            <Link href={'https://x.com/DeanDivizio'} className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"X / Twitter"}</Link>
+                        </div>
                     </div>
                 </div>
             </div>

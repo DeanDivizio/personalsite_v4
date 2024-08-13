@@ -6,16 +6,17 @@ import OVRTONEPicColumn from "@/components/OVRTONEPicColumn"
 export default function OVRTONEPage() {
     return (
         <main>
-            <div id="heroContent" className="flex min-h-screen flex-col items-center text-center lg:items-start lg:text-left justify-center overflow-x-hidden">
-            <div id="ovrtoneHero" className="min-h-screen p-16 sm:p-36 flex flex-col justify-center">
-                <h1 className="text-4xl sm:text-6xl mb-4 leading-[140%] sm:leading-normal">OVRTONE Media Group</h1>
-                <h4 className="text-2xl font-extralight tracking-wide text-offWhite">A Design and Development Breakdown</h4>
-            </div> 
+            <div id="heroContent" className="flex min-h-screen flex-col items-center text-center lg:items-start lg:text-left justify-center bg-ovrtone-bg bg-cover overflow-x-hidden">
+                <div className="backdrop-blur-lg w-screen">
+                    <div id="ovrtoneHero" className="min-h-screen p-16 sm:p-36 flex flex-col justify-center">
+                        <h1 className="text-4xl sm:text-6xl mb-4 leading-[140%] sm:leading-normal">OVRTONE Media Group</h1>
+                        <h4 className="text-2xl font-extralight tracking-wide text-offWhite">A Design and Development Breakdown</h4>
+                    </div>
+                </div>
             </div>
-
-            <div id="heroBG" className="h-screen w-screen absolute top-0 left-0 min-h-screen -z-[11] overflow-clip">
+            {/* <div id="heroBG" className="h-screen w-screen absolute top-0 left-0 min-h-screen -z-[11] overflow-clip">
                 <Image src="https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONE1.webp" width={1920} height={1080} alt="" className="object-cover" style={{minHeight: "100vh", minWidth: "100vw"}} />
-            </div>
+            </div> */}
             <div id="heroBGOverlay" className=" backdrop-blur-md sm:backdrop-blur-md bg-gradient-to-r from-darkGlass lg:from-black lg:from-20% to-darkGlass lg:to-glass absolute min-h-screen w-screen top-0 left-0 -z-10"></div>
             <div className="overflow-x-hidden">
                 <div id="ovrtoneBrand" className="min-h-screen p-12 sm:p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
@@ -81,6 +82,63 @@ export default function OVRTONEPage() {
                             </div>
                         </div>
                         <OVRTONEPicColumn />
+                    </div>
+                </div>
+            </div>
+            <div className="overflow-x-hidden">
+                <div id="ovrtonePlans" className="min-h-screen p-12 sm:p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
+                    <div className="flex flex-col items-center">
+                        <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-slate">{`Moving Forward`}</h2>
+                        <h3 className="text-center text-4xl font-extralight text-blue mb-16">Plans for the Future</h3>
+                        <p className="text-lg text-slate text-center tracking-wider mb-16 font-light">{`The OVRTONE brand and site are in a good spot now but that doesn't mean we stop here.`}</p>
+                        <p className="text-xl text-slate text-center tracking-wider mb-12 font-light italic">{`Future plans include media overhauls and a client portal.`}</p>
+                        <hr className="border-mint w-[33%] mb-16"></hr>
+                    </div>
+                    <div className="mt-8">
+                        <div id="ovrtoneLogo" className="mb-12">
+                            <h3 className="text-4xl text-slate mb-6">Adding More Media</h3>
+                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`This is probably the biggest area of improvement for website. While we have a few examples of our work sprinkled thoughout the site, there's no page or section of the service pages dedicated to showcasing examples.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light">{`I plan to resolve this by adding both. A page that showcases a lot of our work across all of our service areas, as well as building a module that displays a smaller selection of a specific type of work and can be placed on other pages.`}</p>
+                        </div>
+                        <div id="ovrtoneType" className="mb-12">
+                            <h3 className="text-4xl text-slate mb-6">Replacing AI Graphics</h3>
+                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`For the sake of speed, most images that were meant to be purely decorative were generated with DALL-e. This isn't a huge issue, as the graphical elements in question are all dark and blurred background elements but still, as a media company, all of our media should be done in-house.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light">{`Over the next few months, shooting to replace said AI elements is on our to-do list.`}</p>
+                        </div>
+                        <div id="ovrtoneColors" className="mb-12">
+                            <h3 className="text-4xl text-slate mb-6">Client Portal</h3>
+                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`This is the most exciting improvement by far. It's also the most complicated and furthest out. ...those things seem to go together more often then not.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`The idea here is to consolidate all of our client interfacing to one spot. Right now: documents are emailed, photos are uploaded to Pixie Set, videos are sent through Google Drive, payment links are set up in stripe and then emailed; it's functional but not very elegant`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light">{`Building a portal where clients can upload and download assets, documents, and deliverables, pay their bill, and even purchase new services, would be and extremely elegant solution and simplify the process for both us and our clients.`}</p>
+                        </div>
+                    </div>
+                </div>
+                <ParticleBG />
+            </div>
+            <div id="barkCTA" className="darkGeoBG">
+                <div className="w-full p-12 sm:p-48 flex flex-col items-center backdrop-blur-md">
+                    <div className="flex flex-col items-center">
+                        <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-white">{`Wrapping Up`}</h2>
+                        <h3 className="text-center text-4xl font-extralight text-mint mb-24">{`Places to Go, Things to Read`}</h3>
+                        <p className="text-xl text-offWhite text-center tracking-wider mb-16 font-light italic" >{`I never like getting to the end of a webpage and feeling like I've hit a dead-end, so here're a few things you might be interested in!`}</p>
+                        <hr className="border-mint-dark w-[33%] mb-24"></hr>
+                    </div>
+                    <div className="grid grid-rows-3 md:grid-cols-3 max-h-screen md:max-h-[400px] max-w-fit gap-24">
+                        <div className="flex flex-col gap-8 items-center">
+                            <h4 className="text-offWhite text-2xl mb-2" >Other Write-ups</h4>
+                            <Link href='/work/barkproductions' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"Bark Productions"}</Link>
+                        </div>
+                        <div className="flex flex-col gap-8 items-center">
+                            <h4 className="text-offWhite text-2xl mb-2" >Elsewhere On-Site</h4>
+                            <Link href='/work' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"Work"}</Link>
+                            {/* <Link href='/blog' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"Blog"}</Link> */}
+                            <Link href='/about' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"About"}</Link>
+                        </div>
+                        <div className="flex flex-col gap-8 items-center">
+                            <h4 className="text-offWhite text-2xl mb-2">Social</h4>
+                            <Link href={"https://github.com/DeanDivizio"} className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"GitHub"}</Link>
+                            <Link href={'https://x.com/DeanDivizio'} className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"X / Twitter"}</Link>
+                        </div>
                     </div>
                 </div>
             </div>
