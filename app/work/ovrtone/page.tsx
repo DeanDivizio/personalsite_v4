@@ -32,16 +32,16 @@ export default function OVRTONEPage() {
                             <div id="ovrtoneLogo" className="mb-8">
                                 <h3 className="text-4xl text-slate mb-6">Starting with the Logo</h3>
                                 <p className="text-lg text-slate tracking-wider font-light mb-4">{`When designing a brand, my starting point is always the logo. To me, the logo should be a distillation of everything that makes up the brand image. It needs to represent the brand's design philosophy, showcase the primary typeface, and integrate the brand's colors (on color variants of the logo).`}</p>
-                                <p className="text-lg text-slate tracking-wider font-light">{`In OVRTONE's case, I decided a stylized "O". It's similar to our previous design but both more ornate and sharper. I felt like that hit our design goals of formal-adjascent and minimal.`}</p>
+                                <p className="text-lg text-slate tracking-wider font-light">{`In OVRTONE's case, I decided on a stylized "O." It's similar to our previous design but both more ornate and sharper. I felt that it hit our design goals of being formal-adjacent and minimal.`}</p>
                             </div>
                             <div id="ovrtoneType" className="mb-8">
                                 <h3 className="text-4xl text-slate mb-6">Typography</h3>
-                                <p className="text-lg text-slate tracking-wider font-light mb-4">{`In terms of fonts, I wanted a primary and secondary. They both needed to be both web and type safe and (obviously) gel well together.`}</p>
-                                <p className="text-lg text-slate tracking-wider font-light">{`The O logo is a capital O in the Cinzel Decorative font, so Cinzel Decorative became the primary font. For a secondary, I chose Josephine Sans. It's a slightly ornate sans serif font that's easy to read but also stylish enough to work with CD. I particualrly liked the "e", "w", and "m" characters. Is it weird to be this into fonts? Maybe!`}</p>
+                                <p className="text-lg text-slate tracking-wider font-light mb-4">{`In terms of fonts, I wanted a primary and secondary option. They both needed to be web-safe and type-safe, and (obviously) gel well together.`}</p>
+                                <p className="text-lg text-slate tracking-wider font-light">{`The "O" logo is a capital "O" in the Cinzel Decorative font, so Cinzel Decorative became the primary font. For a secondary, I chose Josefin Sans. It's a slightly ornate sans-serif font that's easy to read but also stylish enough to work with Cinzel Decorative. I particularly liked the "e," "w," and "m" characters. Is it weird to be this into fonts? Maybe!`}</p>
                             </div>
                             <div id="ovrtoneColors" className="mb-8">
                                 <h3 className="text-4xl text-slate mb-6">Colors</h3>
-                                <p className="text-lg text-slate tracking-wider font-light mb-4">{`We went with green and blue as our brand colors. I'm pretty biased towards that combo (in case you haven't noticed from being on this site), but my business partner liked that combo as well.`}</p>
+                                <p className="text-lg text-slate tracking-wider font-light mb-4">{`We went with green and blue as our brand colors. I'm pretty biased towards that combo (in case you haven't noticed from being on this site), but my business partner liked it as well.`}</p>
                                 <p className="text-lg text-slate tracking-wider font-light">{`The blue is nice and relaxing. The green works with the blue but is bold enough to really pop off the page. These colors also work well with the drone footage of forests and water that we feature on the site.`}</p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ export default function OVRTONEPage() {
                     <div className="flex flex-col items-center">
                         <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-white">{`The Website`}</h2>
                         <h3 className="text-center text-4xl font-extralight text-mint mb-16">Our Goals</h3>
-                        <p className="text-lg text-offWhite text-center tracking-wider mb-16 font-light">{`Since web design and development is a service we offer, the quality of our site needed to be absolutely top-notch.`}</p>
+                        <p className="text-lg text-offWhite text-center tracking-wider mb-16 font-light">{`Since web design and development are services we offer, the quality of our site needed to be absolutely top-notch.`}</p>
                         <p className="text-xl text-offWhite text-center tracking-wider mb-12 font-light italic">{`Our top-level goals were, speed, security, ease of use, and uniqueness.`}</p>
                         <hr className="border-mint-dark w-[33%] mb-24"></hr>
                     </div>
@@ -64,20 +64,20 @@ export default function OVRTONEPage() {
                             <div id="ovrtoneSiteDesign" className="mb-8">
                                 <h3 className="text-4xl text-white mb-6">Design Framework</h3>
                                 <p className="text-lg text-offWhite tracking-wider font-light mb-4">{`When it comes to design, it was important for us to make it very media-heavy. Each page has a fullscreen hero with a featured image. The home page hero uses a video. All of our testimonials have images next to them.`}</p>
-                                <p className="text-lg text-offWhite tracking-wider font-light">{`Additionally, we went for a minimal, spaced layout with a sparing use of color. Most of the site consists of grayscaled backgrounds with color reserved for important text and CTA's.`}</p>
+                                <p className="text-lg text-offWhite tracking-wider font-light">{`Additionally, we went for a minimal, spaced layout with a sparing use of color. Most of the site consists of grayscale backgrounds, with color reserved for important text and CTAs.`}</p>
                             </div>
                             <div id="ovrtoneSiteDev" className="mb-8">
                                 <h3 className="text-4xl text-white mb-6">Development</h3>
-                                <p className="text-lg text-offWhite tracking-wider font-light mb-8">{`To facilitate our goals of spped and security (as well as aid in maintenance), I decided on a primary tech stack of Next.js and WordPress. We host on Vercel and utilize SendGrid for contact form submission with Next.js server actions.`}</p>
+                                <p className="text-lg text-offWhite tracking-wider font-light mb-8">{`To facilitate our goals of speed and security (as well as aid in maintenance), I decided on a primary tech stack of Next.js and WordPress. We host on Vercel and utilize SendGrid for contact form submission with Next.js server actions.`}</p>
                                 <div className=" border-l-2 pl-8 border-l-mint">
                                     <h4 className="text-3xl font-light text-offWhite mb-6">Next.js</h4>
                                     <p className="text-lg text-offWhite tracking-wider font-light mb-4">{`For this sort of project, Next.js is my framework of choice for a few reasons.`}</p>
-                                    <p className="text-lg text-offWhite tracking-wider font-light mb-4">{`It provides a platform with a lot of 'magic'. The Image component that optomizes images automatically, the Link component that automatically handles prefetching, folder-based routing with the App Router, are all great examples. Speed and ease of creation were really important to me and these things help immensely.`}</p>
-                                    <p className="text-lg text-offWhite tracking-wider font-light mb-12">{`Additionally, the fact it's a full-stack framework means we can build the front end and back end in the same project. Some may not prefer working that way but as a single developer, this let's me deploy server-side logic that's accessible fromt the front end, without the need to build an API.`}</p>
+                                    <p className="text-lg text-offWhite tracking-wider font-light mb-4">{`It provides a platform with a lot of 'magic.' The Image component that optimizes images automatically, the Link component that automatically handles prefetching, and folder-based routing with the App Router are all great examples. Speed and ease of creation were really important to me, and these features help immensely.`}</p>
+                                    <p className="text-lg text-offWhite tracking-wider font-light mb-12">{`Additionally, the fact that it's a full-stack framework means we can build the front end and back end in the same project. Some may not prefer working that way, but as a single developer, this lets me deploy server-side logic that's accessible from the front end, without the need to build an API.`}</p>
                                     <h4 className="text-3xl font-light text-offWhite mb-6">WordPress</h4>
-                                    <p className="text-lg text-offWhite tracking-wider font-light mb-12">{`Both myself and my business partner have a background in WordPress. I opted to use it as a content management system (through WPQraphQL) to make sure adding and changing content is as easy with as little of a learning curve as possible for all current and future team members.`}</p>
+                                    <p className="text-lg text-offWhite tracking-wider font-light mb-12">{`Both my business partner and I have a background in WordPress. I opted to use it as a content management system (through WPGraphQL) to ensure adding and changing content is as easy as possible, with as little of a learning curve as possible for all current and future team members.`}</p>
                                     <h4 className="text-3xl font-light text-offWhite mb-6">SendGrid</h4>
-                                    <p className="text-lg text-offWhite tracking-wider font-light mb-8">{`Contrary to what I used to do with monolithic WordPress sites (plugins), I wanted to take advantage of the flexibility in Next.js to handle contact forms in a custom way. Building a custom contact form, sanitizing inputs on the front and back ends, then sending submissions to the team through an email has proven to be an extremely functional solution. It also gives us the foundation to do other things with that info, such as adding it to a CRM.`}</p>
+                                    <p className="text-lg text-offWhite tracking-wider font-light mb-8">{`Contrary to what I used to do with monolithic WordPress sites (using plugins), I wanted to take advantage of the flexibility in Next.js to handle contact forms in a custom way. Building a custom contact form, sanitizing inputs on the front and back ends, and then sending submissions to the team through email has proven to be an extremely functional solution. It also gives us the foundation to do other things with that information, such as adding it to a CRM.`}</p>
                                 </div>
                             </div>
                         </div>
@@ -97,19 +97,19 @@ export default function OVRTONEPage() {
                     <div className="mt-8">
                         <div id="ovrtoneLogo" className="mb-12">
                             <h3 className="text-4xl text-slate mb-6">Adding More Media</h3>
-                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`This is probably the biggest area of improvement for website. While we have a few examples of our work sprinkled thoughout the site, there's no page or section of the service pages dedicated to showcasing examples.`}</p>
-                            <p className="text-lg text-slate tracking-wider font-light">{`I plan to resolve this by adding both. A page that showcases a lot of our work across all of our service areas, as well as building a module that displays a smaller selection of a specific type of work and can be placed on other pages.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`This is probably the biggest area for improvement on our website. While we have a few examples of our work sprinkled throughout the site, there's no page or section on the service pages dedicated to showcasing examples.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light">{`I plan to resolve this by adding both a page that showcases a lot of our work across all of our service areas, as well as building a module that displays a smaller selection of a specific type of work and can be placed on other pages.`}</p>
                         </div>
                         <div id="ovrtoneType" className="mb-12">
                             <h3 className="text-4xl text-slate mb-6">Replacing AI Graphics</h3>
-                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`For the sake of speed, most images that were meant to be purely decorative were generated with DALL-e. This isn't a huge issue, as the graphical elements in question are all dark and blurred background elements but still, as a media company, all of our media should be done in-house.`}</p>
-                            <p className="text-lg text-slate tracking-wider font-light">{`Over the next few months, shooting to replace said AI elements is on our to-do list.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`For the sake of speed, most images that were meant to be purely decorative were generated with DALL-E. This isn't a huge issue, as the graphical elements in question are all dark and blurred background elements. Still, as a media company, all of our media should be done in-house.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light">{`Over the next few months, replacing these AI-generated elements is on our to-do list.`}</p>
                         </div>
                         <div id="ovrtoneColors" className="mb-12">
                             <h3 className="text-4xl text-slate mb-6">Client Portal</h3>
-                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`This is the most exciting improvement by far. It's also the most complicated and furthest out. ...those things seem to go together more often then not.`}</p>
-                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`The idea here is to consolidate all of our client interfacing to one spot. Right now: documents are emailed, photos are uploaded to Pixie Set, videos are sent through Google Drive, payment links are set up in stripe and then emailed; it's functional but not very elegant`}</p>
-                            <p className="text-lg text-slate tracking-wider font-light">{`Building a portal where clients can upload and download assets, documents, and deliverables, pay their bill, and even purchase new services, would be and extremely elegant solution and simplify the process for both us and our clients.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`This is by far the most exciting improvement. It's also the most complicated and furthest out ... those things seem to go together more often than not.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light mb-4">{`The idea here is to consolidate all of our client interfacing to one spot. Right now, documents are emailed, photos are uploaded to Pixieset, videos are sent through Google Drive, and payment links are set up in Stripe and then emailed. It's functional but not very elegant.`}</p>
+                            <p className="text-lg text-slate tracking-wider font-light">{`Building a portal where clients can upload and download assets, documents, and deliverables, pay their bill, and even purchase new services, would be an extremely elegant solution and simplify the process for both us and our clients.`}</p>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /blog
+
+Sitemap: https://www.ovrtonemedia.com/sitemap.xml
