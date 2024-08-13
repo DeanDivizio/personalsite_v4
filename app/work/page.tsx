@@ -36,7 +36,7 @@ export default function Work() {
         <ParticleBG />
       </div>
       <MediaSection />
-      <div id="design" className="min-h-screen max-h-[110vh] w-screen flex flex-row justify-center items-start overflow-hidden" >
+      <div id="design" className="min-h-screen md:max-h-[110vh] w-screen flex flex-row justify-center items-start overflow-hidden" >
         <div className=" h-full w-screen  flex flex-col">
           <div className="pt-24 sm:pt-32 sm:pb-8 backdrop-blur-sm">
             <h2 className="empTextDiv text-6xl sm:text-8xl mb-6 font-semibold text-center text-slate">{`Design`}</h2>

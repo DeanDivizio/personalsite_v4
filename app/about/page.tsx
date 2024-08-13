@@ -27,7 +27,7 @@ export default function About() {
                         <h2 className="empTextDiv text-6xl sm:text-8xl mb-16 font-semibold text-center text-slate">{`Hi!`}</h2>
                         <p className="text-xl text-slate font-light tracking-wide text-left sm:text-center">{`My name's Dean and I'm a multimedia engineer and designer.`}</p>
                         <br className="mb-8"></br>
-                        <p className="text-xl text-slate font-light tracking-wide text-left sm:text-center mb-16">{`While I've held a lot of varied positions across my career (from graphic design, to SEO tem management, to programming), my goal is always to use my existing skills alongside my desire to learn to adapt to the requirements of my current role.`}</p>
+                        <p className="text-xl text-slate font-light tracking-wide text-left sm:text-center mb-16">{`While I've held a lot of varied positions across my career (from graphic design, to SEO, content writing, team management, and programming), my goal is always to use my existing skills alongside my desire to learn to adapt to the requirements of my current role.`}</p>
                         {/* <hr className="mb-12 w-[66%] border-blue"></hr> */}
                         <h3 className="text-2xl text-slate-light font-medium sm:tracking-wide sm:text-center mb-12">{`In terms of specifics, I'm proficient in:`}</h3>
                         <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 sm:gap-16">
