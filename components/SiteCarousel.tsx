@@ -25,9 +25,9 @@ export default function SiteCarousel() {
     }, []); // Empty dependency array ensures this effect runs only once on mount
 
     useEffect(() => {
-        if (width < 768 && !isMobile) {
+        if (width < 801 && !isMobile) {
             setIsMobile(true);
-        } else if (width >= 768 && isMobile) {
+        } else if (width >= 801 && isMobile) {
             setIsMobile(false);
         }
     }, [width, isMobile]);

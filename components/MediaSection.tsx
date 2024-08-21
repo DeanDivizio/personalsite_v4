@@ -60,9 +60,9 @@ useEffect(() => {
             <div className={styles.headingSection}>
               
               <div className={styles.toggleContainer} onClick={handleClick}>
-                <div className="text-3xl sm:text-7xl z-10" style={{ color: isToggled1 ? '#000000' : '#0073ff', fontWeight: isToggled1 ? '200' : '200', opacity: isToggled1 ? '0.65' : '1' }}>Photo</div>
+                <div className="text-3xl sm:text-5xl lg:text-7xl z-10" style={{ color: isToggled1 ? '#000000' : '#0073ff', fontWeight: isToggled1 ? '200' : '200', opacity: isToggled1 ? '0.65' : '1' }}>Photo</div>
                 <div className={`${styles.toggleButton} ${isToggled1 ? styles.active : ''}`}></div>
-                <div className="text-3xl sm:text-7xl z-10" style={{ color: isToggled1 ? '#0073ff' : '#000000', fontWeight: isToggled1 ? '200' : '200', opacity: isToggled1 ? '1' : '0.65' }}>Video</div>
+                <div className="text-3xl sm:text-5xl lg:text-7xl z-10" style={{ color: isToggled1 ? '#0073ff' : '#000000', fontWeight: isToggled1 ? '200' : '200', opacity: isToggled1 ? '1' : '0.65' }}>Video</div>
               </div>
             </div>
             <div className={styles.mediaContainer}>
