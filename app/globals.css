@@ -167,11 +167,11 @@ button {
   z-index: -20;
   height: 100%;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #tsparticles {
   height: 100%;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
