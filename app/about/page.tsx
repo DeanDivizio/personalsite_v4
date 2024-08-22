@@ -23,14 +23,14 @@ export default function About() {
             </div>
             <div id="bio" className="w-screen whiteGeoBG flex flex-row justify-center items-start" >
                 <div className="h-full backdrop-blur-sm flex flex-col">
-                    <div className="pt-24 sm:pt-40 pb-36 sm:pb-48 pl-16 sm:pl-64 pr-16 sm:pr-64 flex flex-col justify-center items-center backdrop-blur-md">
+                    <div className="pt-24 lg:pt-40 pb-36 sm:pb-48 px-16 lg:px-64 flex flex-col justify-center items-center backdrop-blur-md">
                         <h2 className="empTextDiv text-6xl sm:text-8xl mb-16 font-semibold text-center text-slate">{`Hi!`}</h2>
                         <p className="text-xl text-slate font-light tracking-wide text-left sm:text-center">{`My name's Dean and I'm a multimedia engineer and designer.`}</p>
                         <br className="mb-8"></br>
                         <p className="text-xl text-slate font-light tracking-wide text-left sm:text-center mb-16">{`While I've held a lot of varied positions across my career (from graphic design, to SEO, content writing, team management, and programming), my goal is always to use my existing skills alongside my desire to learn to adapt to the requirements of my current role.`}</p>
                         {/* <hr className="mb-12 w-[66%] border-blue"></hr> */}
                         <h3 className="text-2xl text-slate-light font-medium sm:tracking-wide sm:text-center mb-12">{`In terms of specifics, I'm proficient in:`}</h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 sm:gap-16">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-16">
                             <div className="flex flex-col">
                                 <h4 className="text-slate text-2xl mb-2">Design</h4>
                                 <p className="text-slate text-lg font-light">Layout</p>

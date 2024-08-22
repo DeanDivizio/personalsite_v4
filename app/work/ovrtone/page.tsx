@@ -19,16 +19,16 @@ export default function OVRTONEPage() {
             </div> */}
             <div id="heroBGOverlay" className=" backdrop-blur-md sm:backdrop-blur-md bg-gradient-to-r from-darkGlass lg:from-black lg:from-20% to-darkGlass lg:to-glass absolute min-h-screen w-screen top-0 left-0 -z-10"></div>
             <div className="overflow-x-hidden">
-                <div id="ovrtoneBrand" className="min-h-screen p-12 sm:p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
+                <div id="ovrtoneBrand" className="min-h-screen p-12 sm:p-20 lg:p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
                     <div className="flex flex-col items-center">
-                        <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-slate">{`Brand Design`}</h2>
+                        <h2 className="empTextDiv text-6xl sm:text-7xl lg:text-8xl mb-8 font-semibold text-center text-slate">{`Brand Design`}</h2>
                         <h3 className="text-center text-4xl font-extralight text-blue mb-16">The Core Concept</h3>
                         <p className="text-lg text-slate text-center tracking-wider mb-16 font-light">{`As a Media Engineering & Design company, we wanted OVRTONE's brand to balance creativity and formality. It was important to us to keep our layouts and color scheme minimalistic but interesting, to draw more attention to the media we showcase, while keeping our brand's feel fresh`}</p>
                         <p className="text-xl text-slate text-center tracking-wider mb-12 font-light italic">{`Overall, we wanted formal-adjascent fonts, minimal but bold color, and layouts that draw focus to our showcased elements.`}</p>
                         <hr className="border-mint w-[33%] mb-16"></hr>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2">
-                        <div className="order-2 mt-16 sm:mt-auto sm:order-1">
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                        <div className="order-2 mt-16 lg:mt-auto lg:order-1">
                             <div id="ovrtoneLogo" className="mb-8">
                                 <h3 className="text-4xl text-slate mb-6">Starting with the Logo</h3>
                                 <p className="text-lg text-slate tracking-wider font-light mb-4">{`When designing a brand, my starting point is always the logo. To me, the logo should be a distillation of everything that makes up the brand image. It needs to represent the brand's design philosophy, showcase the primary typeface, and integrate the brand's colors (on color variants of the logo).`}</p>
@@ -45,13 +45,13 @@ export default function OVRTONEPage() {
                                 <p className="text-lg text-slate tracking-wider font-light">{`The blue is nice and relaxing. The green works with the blue but is bold enough to really pop off the page. These colors also work well with the drone footage of forests and water that we feature on the site.`}</p>
                             </div>
                         </div>
-                        <Image className="max-w-[66%] inline-block ml-12 sm:ml-64 mr-12 sm:mr-64 shadow-lg order-1 sm:order-2" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONELogo.webp"} width={2000} height={2000} alt="OVRTONE Media Group Logo" />
+                        <Image className="max-w-[66%] inline-block ml-12 sm:ml-auto mr-12 sm:mr-auto shadow-lg order-1 lg:order-2" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/OVRTONELogo.webp"} width={2000} height={2000} alt="OVRTONE Media Group Logo" />
                     </div>
                 </div>
                 <ParticleBG />
             </div>
             <div id="ovrtoneSite" className="min-h-screen darkGeoBG">
-                <div className="w-full h-full p-12 sm:p-48 backdrop-blur-md">
+                <div className="w-full h-full p-12 sm:p-20 lg:p-48 backdrop-blur-md">
                     <div className="flex flex-col items-center">
                         <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-white">{`The Website`}</h2>
                         <h3 className="text-center text-4xl font-extralight text-mint mb-16">Our Goals</h3>
@@ -59,8 +59,8 @@ export default function OVRTONEPage() {
                         <p className="text-xl text-offWhite text-center tracking-wider mb-12 font-light italic">{`Our top-level goals were, speed, security, ease of use, and uniqueness.`}</p>
                         <hr className="border-mint-dark w-[33%] mb-24"></hr>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2">
-                        <div className="order-2 sm:order-1">
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                        <div className="order-2 lg:order-1">
                             <div id="ovrtoneSiteDesign" className="mb-8">
                                 <h3 className="text-4xl text-white mb-6">Design Framework</h3>
                                 <p className="text-lg text-offWhite tracking-wider font-light mb-4">{`When it comes to design, it was important for us to make it very media-heavy. Each page has a fullscreen hero with a featured image. The home page hero uses a video. All of our testimonials have images next to them.`}</p>
@@ -86,9 +86,9 @@ export default function OVRTONEPage() {
                 </div>
             </div>
             <div className="overflow-x-hidden">
-                <div id="ovrtonePlans" className="min-h-screen p-12 sm:p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
+                <div id="ovrtonePlans" className="min-h-screen p-12 sm:p-20 lg:p-48 flex flex-col justify-center items-center backdrop-blur-[4px]">
                     <div className="flex flex-col items-center">
-                        <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-slate">{`Moving Forward`}</h2>
+                        <h2 className="empTextDiv text-6xl sm:text-7xl lg:text-8xl mb-8 font-semibold text-center text-slate">{`Moving Forward`}</h2>
                         <h3 className="text-center text-4xl font-extralight text-blue mb-16">Plans for the Future</h3>
                         <p className="text-lg text-slate text-center tracking-wider mb-16 font-light">{`The OVRTONE brand and site are in a good spot now but that doesn't mean we stop here.`}</p>
                         <p className="text-xl text-slate text-center tracking-wider mb-12 font-light italic">{`Future plans include media overhauls and a client portal.`}</p>
@@ -116,14 +116,14 @@ export default function OVRTONEPage() {
                 <ParticleBG />
             </div>
             <div id="barkCTA" className="darkGeoBG">
-                <div className="w-full p-12 sm:p-48 flex flex-col items-center backdrop-blur-md">
+                <div className="w-full p-12 sm:p-20 lg:p-48 flex flex-col items-center xl:max-h-[1000px] overflow-hidden backdrop-blur-md">
                     <div className="flex flex-col items-center">
-                        <h2 className="empTextDiv text-6xl sm:text-8xl mb-8 font-semibold text-center text-white">{`Wrapping Up`}</h2>
+                        <h2 className="empTextDiv text-6xl sm:text-7xl lg:text-8xl mb-8 font-semibold text-center text-white">{`Wrapping Up`}</h2>
                         <h3 className="text-center text-4xl font-extralight text-mint mb-24">{`Places to Go, Things to Read`}</h3>
                         <p className="text-xl text-offWhite text-center tracking-wider mb-16 font-light italic" >{`I never like getting to the end of a webpage and feeling like I've hit a dead-end, so here're a few things you might be interested in!`}</p>
                         <hr className="border-mint-dark w-[33%] mb-24"></hr>
                     </div>
-                    <div className="grid grid-rows-3 md:grid-cols-3 max-h-screen md:max-h-[400px] max-w-fit gap-24">
+                    <div className="grid grid-rows-3 lg:grid-cols-3 max-w-fit gap-24">
                         <div className="flex flex-col gap-8 items-center">
                             <h4 className="text-offWhite text-2xl mb-2" >Other Write-ups</h4>
                             <Link href='/work/barkproductions' className="px-16 py-2 rounded-lg bg-gradient-to-r from-mint to-mint-dark text-xl font-light max-w-fit transition hover:scale-105 ease-in-out duration-300">{"Bark Productions"}</Link>

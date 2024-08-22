@@ -206,9 +206,9 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-8 sm:h-12 w-8 sm:w-12 rounded-full",
+        "absolute h-6 lg:h-12 w-6 lg:w-12 rounded-full",
         orientation === "horizontal"
-          ? "-left-16 top-1/2 -translate-y-1/2"
+          ? "-left-8 lg:-left-16 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -216,7 +216,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className="h-4 sm:h-10 w-4 sm:w-10" />
+      <ArrowLeft className="h-4 lg:h-10 w-4 lg:w-10" />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -235,9 +235,9 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-8 sm:h-12 w-8 sm:w-12 rounded-full",
+        "absolute h-6 lg:h-12 w-6 lg:w-12 rounded-full",
         orientation === "horizontal"
-          ? "-right-16 top-1/2 -translate-y-1/2"
+          ? "-right-8 lg:-right-16 top-1/2 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}

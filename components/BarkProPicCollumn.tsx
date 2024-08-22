@@ -23,17 +23,17 @@ export default function OVRTONEPicColumn() {
     }, []); // Empty dependency array ensures this effect runs only once on mount
 
     useEffect(() => {
-        if (width < 768 && !isMobile) {
+        if (width < 801 && !isMobile) {
             setIsMobile(true);
-        } else if (width >= 768 && isMobile) {
+        } else if (width >= 801 && isMobile) {
             setIsMobile(false);
         }
     }, [width, isMobile]);
 
     return(
-        <div className="pt-8 sm:pt-24 order-1 sm:order-2">
-            <Image className="max-w-[90%] sm:max-w-[66%] inline-block ml-4 mr-4 sm:ml-64 sm:mr-64 mb-24" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro1.webp"} width={2000} height={1000} alt="Bark Productions site " />
-            {!isMobile ? <Image className="max-w-[66%] inline-block ml-64 mr-64" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro2.webp"} width={2000} height={1000} alt="Bark Productions site" /> : null}
+        <div className="pt-8 lg:pt-24 order-1 lg:order-2">
+            <Image className="max-w-[90%] sm:max-w-[66%] inline-block ml-4 mr-4 md:ml-28 lg:ml-64 lg:mr-64 mb-24" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro1.webp"} width={2000} height={1000} alt="Bark Productions site " />
+            {!isMobile ? <Image className="max-w-[66%] inline-block ml-4 mr-4 md:ml-28 lg:ml-64 lg:mr-64" src={"https://api.deandivizio.com/wp-content/uploads/2024/08/BarkPro2.webp"} width={2000} height={1000} alt="Bark Productions site" /> : null}
         </div>
     )
 }
