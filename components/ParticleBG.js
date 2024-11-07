@@ -104,7 +104,7 @@ const ParticlesComponent = (props) => {
   );
 
 
-  return <Particles id={props.id} init={particlesLoaded} options={options} style={{width: '100vw !important'}}/>; 
+  return <Particles id={props.id} init={particlesLoaded} options={options} style={{width: '100vw !important', filter: "blur(100px)"}}/>; 
 };
 
 export default ParticlesComponent;
