@@ -8,7 +8,7 @@ export default function SueReference() {
                         <h4 className="text-xl sm:text-2xl font-extralight mb-16 text-white">{`Supervising Manager at Einstein's Bagels`}</h4>
                     </div>
                     <div className="pb-16" >
-                        <p className="text-sm italic text-white text-center">{`Below is the content of Sue's letter. You can `}<a href="https://api.deandivizio.com/wp-content/uploads/2024/11/DeanDivizio_RecLetter_fromSueWolters.pdf" target="_blank" className="underline text-blue">view/download the signed PDF here.</a></p>
+                        <p className="text-sm italic text-white text-center px-12">{`Below is the content of Sue's letter. You can `}<a href="https://api.deandivizio.com/wp-content/uploads/2024/11/DeanDivizio_RecLetter_fromSueWolters.pdf" target="_blank" className="underline text-blue">view/download the signed PDF here.</a></p>
                     </div>
                     <div className="px-12 py-8">
                         <p className="text-white text-xl font-extralight tracking-wider leading-relaxed mb-6">{`To Whom It May Concern,`}</p>
