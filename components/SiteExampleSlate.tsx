@@ -55,7 +55,7 @@ export default function SiteExampleSlate(props: SiteProps) {
  
 
     return (
-        <div className="grid grid-rows-1 md:grid-rows-2 lg:grid-cols-2 items-center justify-center gap-16 lg:gap-24 py-16 lg:py-0 px-8 lg:px-36 sm:pb-8 max-w-[80vw] sm:max-w-full max-h-[100vh] md:max-h-[200vh] lg:max-h-[100vh] mb-16 lg:mb-0">
+        <div className="grid grid-rows-1 md:grid-rows-2 xl:grid-cols-2 items-center justify-center gap-16 lg:gap-24 py-16 lg:py-0 px-8 lg:px-36 sm:pb-8 max-w-[80vw] sm:max-w-full max-h-[100vh] md:max-h-[200vh] lg:max-h-[100vh] mb-16 lg:mb-0">
             <div className={props.reverse ? "order-1 lg:order-2" : "order-1"}>
                 <h3 className="text-slate text-2xl sm:text-4xl mb-2">{props.heading}</h3>
                 {props.tech ? <h5 className="text-mint text-md sm:text-xl mb-6 font-extralight italic">{props.tech}</h5> : null}
@@ -67,7 +67,7 @@ export default function SiteExampleSlate(props: SiteProps) {
             </div>
             {isMobile? null : <div className={props.reverse ? "order-2 lg:order-1" : "order-2"}>
             <Carousel  className="" opts={{align: "center", loop: true, }} orientation="vertical" plugins={[plugin.current]}>
-                    <CarouselContent className="h-[360px] lg:h-[300px]">
+                    <CarouselContent className="h-[360px] lg:h-[300px] 2xl:h-[550px]">
                     {props.img1 ? <CarouselItem><Image className="max-w-full" src={props.img1.url} width={props.img1.width} height={props.img1.height} alt={props.img1.alt ? props.img1.alt : ""} /></CarouselItem> : null }
                     {props.img2 ? <CarouselItem><Image className="max-w-full" src={props.img2.url} width={props.img2.width} height={props.img2.height} alt={props.img2.alt ? props.img2.alt : ""} /></CarouselItem> : null }
                     {props.img3 ? <CarouselItem><Image className="max-w-full" src={props.img3.url} width={props.img3.width} height={props.img3.height} alt={props.img3.alt ? props.img3.alt : ""} /></CarouselItem> : null }

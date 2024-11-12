@@ -34,3 +34,13 @@ I'm launching within the next few days and while the site is in a good state, th
     - Right now my WordPress install is essentially just file storage. I want to change that. A blog template with a blogs landing page and content from WordPress via WPGraphQL sounds like a great way to do that.
 - Add more work examples
     - I'm wrapping up some projects soon so this should be easy but still - more work would be great
+
+### Edit: 11/11/24
+Basically all of the above is done. New goals are:
+
+- Finish migration to Shadcn ui components
+    - the media switch on the work page going to a tabs component is the biggest one
+- add content
+    - more case studies
+    - more blog posts
+    - more references

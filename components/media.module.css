@@ -55,7 +55,7 @@
 }
 
 .toggleButton.active {
-  transform: translateX(calc((2rem + 3vw)*3));
+  transform: translateX(calc((2rem + 3vw)*2.85));
 }
 
 .label {

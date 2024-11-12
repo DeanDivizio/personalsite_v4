@@ -23,7 +23,7 @@ export default function About() {
             </div>
             <div id="bio" className="w-screen whiteGeoBG flex flex-row justify-center items-start" >
                 <div className="h-full backdrop-blur-sm flex flex-col">
-                    <div className="pt-24 lg:pt-40 pb-36 sm:pb-48 px-16 lg:px-64 flex flex-col justify-center items-center backdrop-blur-md">
+                    <div className="pt-24 lg:pt-40 pb-36 sm:pb-48 px-16 lg:px-48 flex flex-col justify-center items-center backdrop-blur-md">
                         <h2 className="empTextDiv text-6xl sm:text-8xl mb-16 font-semibold text-center text-slate">{`Hi!`}</h2>
                         <p className="text-xl text-slate font-light tracking-wide text-center">{`My name's Dean and I'm a multimedia engineer and designer.`}</p>
                         <br className="mb-8"></br>
@@ -47,7 +47,7 @@ export default function About() {
                             </div>
                             <div className="flex flex-col text-center">
                                 <h4 className="text-slate text-2xl mb-2">Development</h4>
-                                <p className="text-slate text-lg font-light">{`Web (React, WordPress)`}</p>
+                                <p className="text-slate text-lg font-light">{`Web (Next.js, WordPress)`}</p>
                                 <p className="text-slate text-lg font-light">{`iOS (Swift)`}</p>
                                 <p className="text-slate text-lg font-light">Source Control</p>
                                 <p className="text-slate text-lg font-light">{`Full-stack w/ Front-end Focus`}</p>
@@ -65,8 +65,8 @@ export default function About() {
                         <hr className="border-slate-light border w-[16%] mb-16"></hr>
                         <p className="text-lg sm:text-xl text-slate font-light sm:tracking-wide text-center mb-6">{`I'm not very active on social media but if you'd like my links, here they are. :)`}</p>
                         <div className="grid grid-cols-2">
-                            <Link className="text-lg text-slate underline hover:text-mint hover:scale-105 transition-all" href={"https://github.com/DeanDivizio"}>GitHub</Link>
-                            <Link className="text-lg text-slate underline hover:text-mint hover:scale-105 transition-all" href={'https://x.com/DeanDivizio'}>X / Twitter</Link>
+                            <Link className="text-lg text-slate underline hover:text-mint hover:scale-105 transition-all" href={"https://github.com/DeanDivizio"} target="_blank">GitHub</Link>
+                            <Link className="text-lg text-slate underline hover:text-mint hover:scale-105 transition-all" href={'https://x.com/DeanDivizio'} target="_blank">X / Twitter</Link>
                         </div>
                     </div>
                     <ParticleBG />

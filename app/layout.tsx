@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "deandivizio.com",
-  description: "The portfolio website for designer, developer, and media engineer, Dean Divizio.",
+  description: "Hi, I'm Dean. This is my website.",
 };
 
 export default function RootLayout({
@@ -21,10 +21,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <GoogleAnalytics gaId="G-B4LMP9JX7Y" />
         <div className="absolute w-screen flex flex-row justify-center z-10">
-          <nav className="pt-8 sm:pt-6 flex gap-6 sm:gap-5 w-36 items-center justify-center border-b pb-4 border-darkWhite" >
+          <nav className="pt-8 sm:pt-6 flex gap-4 sm:gap-8 items-center justify-center pb-4" >
             <Link href={"/"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight ">Home</Link>
-            <Link href={"/work"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">Work</Link>
+            <Link href={"/work"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">My Work</Link>
             <Link href={"/about"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">About</Link>
+            <Link href={"/references"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">References</Link>
             {/* <Link href={"/blog"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">Blog</Link> */}
           </nav>
         </div>

@@ -12,6 +12,7 @@
   --blue-light: #90D8FF;
   --green: #00FF5D;
   --blue: #0089D3;
+  --blue-dark: #172554;
   margin:0;
   
 }
@@ -37,6 +38,12 @@ body {
 
 .empTextDiv{
   background: linear-gradient(30deg, var(--green), var(--blue-light));
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  background-clip: text;
+}
+.empTextDivDark{
+  background: linear-gradient(30deg, var(--blue-dark), transparent);
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
   background-clip: text;
