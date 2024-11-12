@@ -30,5 +30,29 @@ export default function sitemap() {
         changeFrequency: 'monthly',
         priority: 0.6,
       },
+      {
+        url: 'https://www.deandivizio.com/references',
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0,
+      },
+      {
+        url: 'https://www.deandivizio.com/references/alexmelelli',
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0,
+      },
+      {
+        url: 'https://www.deandivizio.com/references/dougmcliechey',
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0,
+      },
+      {
+        url: 'https://www.deandivizio.com/references/suewolters',
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0,
+      },
     ]
   }
