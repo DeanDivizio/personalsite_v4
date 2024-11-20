@@ -3,7 +3,7 @@ export default function ReferencesLanding() {
 
     return (
         <main>
-            <div className="w-screen min-h-[98vh] flex flex-row justify-center items-start bg-gradient-to-br from-slate-dark to-black" >
+            <div className="w-screen min-h-[98vh] flex flex-row justify-center items-start bg-gradient-to-br from-slate to-black" >
                 <div className="h-full backdrop-blur-sm  flex flex-col">
                     <div className="pt-36 md:pt-64 pb-24 md:pb-48 px-8 backdrop-blur-lg text-center flex flex-col justify-center">
                         <h1 className="text-6xl sm:text-8xl mb-6 font-semibold empTextDiv w-full py-2"><span className="empText text-center">{`References`}</span></h1>

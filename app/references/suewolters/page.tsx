@@ -1,7 +1,7 @@
 export default function SueReference() {
     return (
         <main>
-            <div id="bio" className="w-screen flex flex-row justify-center items-start bg-gradient-to-br from-slate-dark to-black" >
+            <div id="bio" className="w-screen flex flex-row justify-center items-start bg-gradient-to-br from-slate to-black" >
                 <div className="h-full backdrop-blur-sm  flex flex-col">
                     <div className="py-64 px-8 text-center flex flex-col justify-center">
                         <h1 className="text-6xl sm:text-8xl mb-6 font-semibold empTextDiv w-full"><span className="empText text-center">{`Sue Wolters`}</span></h1>
@@ -24,7 +24,6 @@ export default function SueReference() {
                         <p className="text-white text-xl font-extralight tracking-wide leading-loose mb-0">{`Einstein Brother's Bagels`}</p>
                         <p className="text-white text-xl font-extralight tracking-wide underline leading-loose mb-0"><a href="tel:6163319436">{`(616) 331-9436`}</a></p>
                     </div>
-                    {/* <ParticleBG /> */}
                 </div>
             </div>
         </main>

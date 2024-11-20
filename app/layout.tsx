@@ -21,12 +21,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <GoogleAnalytics gaId="G-B4LMP9JX7Y" />
         <div className="absolute w-screen flex flex-row justify-center z-10">
-          <nav className="pt-8 sm:pt-6 flex gap-4 sm:gap-8 items-center justify-center pb-4" >
+          <nav className="pt-8 sm:pt-6 flex flex-wrap px-12 gap-4 sm:gap-8 items-center justify-center pb-4" >
             <Link href={"/"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight ">Home</Link>
             <Link href={"/work"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">My Work</Link>
             <Link href={"/about"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">About</Link>
             <Link href={"/references"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">References</Link>
-            {/* <Link href={"/blog"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">Blog</Link> */}
+            <Link href={"/blog"} className="text-base sm:text-xl font-thin tracking-widest hover:font-extralight">Blog</Link>
           </nav>
         </div>
         {children}

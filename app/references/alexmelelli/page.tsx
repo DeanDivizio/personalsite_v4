@@ -9,7 +9,7 @@ const ovrtoneFont = Cinzel_Decorative({
 export default function AlexReference() {
     return (
         <main>
-            <div id="bio" className="w-screen flex flex-row justify-center items-start bg-gradient-to-br from-slate-dark to-black" >
+            <div id="bio" className="w-screen flex flex-row justify-center items-start bg-gradient-to-br from-slate to-black" >
                 <div className="h-full flex flex-col">
                     <div className="py-64 px-8 text-center flex flex-col justify-center">
                         <h1 className="text-6xl sm:text-8xl mb-6 font-semibold empTextDiv w-full"><span className="empText text-center">{`Alex Melelli`}</span></h1>
