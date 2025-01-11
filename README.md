@@ -1,5 +1,7 @@
 # Portfolio Site V4 - Comin' Back for More
 
+**This project is old. V5 is available on my profile.**
+
 ## Why the redesign?
 
 I suppose this is actually V3 ish.
